@@ -118,7 +118,7 @@ section {
   position: absolute;
   bottom: 0;
   opacity: 0;
-  transform: translateY(0%);
+  transform: translateY(-100%);
   transition: all 1s ease;
 }
 .ourpeople-area .textArea {
@@ -140,11 +140,20 @@ section {
 
 .show {
   opacity: 1 !important;
-  animation: slideUp 1s linear infinite;
+  animation: slideUp 2s linear infinite;
 }
 
 @keyframes slideUp {
   0% {
     transform: translateY(100%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  75% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
   }
 }/*# sourceMappingURL=index.css.map */
